@@ -1,17 +1,21 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+
 const styles = StyleSheet.create({
+    /*
     container: {
       flex: 1,
-      backgroundColor: 'white',
+      backgroundColor: '#C23616',
       justifyContent: "center",
       alignItems: 'center',
     },
+  
     texto: {
       color: '#800000',
       fontSize: 25,
       textAlign: 'center',
     },
+    */
     legenda: {
       color: 'blue',
       fontSize: 18,
@@ -58,6 +62,70 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       color: 'blue',
+    },
+
+    container: {
+      flex: 1,
+      padding: 50,
+      backgroundColor: '#C23616',
+      justifyContent: "center",
+      alignItems: 'center',
+    },
+
+    tituloCadastro: {
+      alignItems: 'center',
+      fontSize: 30,
+      color: '#FBC531',
+      marginBottom: 20,
+      //fontFamily: 'Lemon',
+    },
+
+    textoCadastro: {
+      alignItems: 'center',
+      fontSize: 15,
+      color: '#F5F6FA',
+      marginBottom: 30,
+    },
+
+    caixaDeTexto: {
+      fontSize: 20,
+      marginTop: 20,
+      borderRadius: 5,
+      backgroundColor: '#FFF6F6',
+      width: 250,
+      height: 50,
+      textAlign: 'center',
+    },
+
+    botaoCadastro: {
+      backgroundColor: '#FBC531',
+      borderRadius: 50,
+      width: 250,
+      height: 50,
+      marginTop: 30,
+      padding: 10,
+      justifyContent: 'center',
+      alignItems: 'center',
+    }, 
+
+    textoBotaoCadastro: {
+      fontSize: 25,
+      color: '#2F3640',
+    },
+
+    tituloCadastroRealizado: {
+      alignItems: 'center',
+      fontSize: 45,
+      color: '#FBC531',
+      marginBottom: 20,
+      //fontFamily: 'Lemon',
+    },
+
+    textoCadastroRealizado: {
+      alignItems: 'center',
+      fontSize: 25,
+      color: '#F5F6FA',
+      marginVertical: 100,
     }
 });
 
