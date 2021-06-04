@@ -10,9 +10,9 @@ class Login extends Component{
     render(){
         return(
             <View style={styles.container}>
-            {/*<Image source={require('../images/img1.png')} style={styles.imagem}/>*/}
-                <TextInput style={styles.caixa} placeholder={'Insira o usuario'} onChangeText={text => this.state.nome=text}/>
-                <TextInput style={styles.caixa} placeholder={'Insira sua senha'} secureTextEntry={true}/>
+            <Text style={styles.tituloPrincipal}>Pizzaria</Text>
+                <TextInput style={styles.caixaDeTexto} placeholder={'Insira o usuario'} onChangeText={text => this.state.nome=text}/>
+                <TextInput style={styles.caixaDeTexto} placeholder={'Insira sua senha'} secureTextEntry={true}/>
                 
                 <TouchableOpacity style={styles.button} onPress={()=>{this.props.navigation.navigate('Menu',{'nome': this.state.nome})}}>
                     <Text style={styles.textButton}>Entrar</Text>

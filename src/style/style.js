@@ -1,26 +1,29 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f6fa',
+    padding: 10,
+    backgroundColor: '#C23616',
     justifyContent: "center",
     alignItems: 'center',
   },
   texto: {
-    color: '#2f3640',
+    color: '#f5f6fa',
     fontSize: 25,
     textAlign: 'center',
+    fontWeight: '500',
   },
   legenda: {
     color: 'blue',
     fontSize: 18,
   },
   button: {
-    backgroundColor: '#c23616',
+    backgroundColor: '#8c7ae6',
     alignItems: 'center',
     justifyContent: 'center',
-    width: 200,
+    width: 250,
     height: 50,
     padding: 20,
     marginTop: 10,
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
   },
   textButton: {
-    fontSize: 20,
+    fontSize: 18,
     color: 'white',
     alignItems: 'center',
     justifyContent: 'center',
@@ -58,20 +61,30 @@ const styles = StyleSheet.create({
     fontSize: 15,
     alignItems: 'center',
     justifyContent: 'center',
-    color: '#0097e6',
+    color: '#f5f6fa',
     fontWeight: '600',
+    textDecorationLine: 'underline'
   },
   titulo: {
     fontWeight: '600',
-    color: '#2f3640',
+    color: '#f5f6fa',
     fontSize: 22,
     textAlign: 'center',
+    marginBottom: 10,
+  },
+  tituloPrincipal: {
+    fontWeight: '600',
+    color: '#f5f6fa',
+    fontSize: 48,
+    textAlign: 'center',
+    fontFamily: 'georgia',
+    marginBottom: 60,
   },
   secao: {
     height: 28,
     fontWeight: '500',
     color: 'white',
-    backgroundColor: '#44bd32',
+    backgroundColor: '#2f3640',
     fontSize: 18,
     textAlign: 'center',
     alignSelf: 'stretch',
@@ -83,7 +96,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
   },
   secaoSabores: {
-    flex: 1,
+    flex: 0.5,
     width: 'stretch',
     flexDirection: 'row',
     alignSelf: 'stretch',
@@ -121,7 +134,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   buttonPedido: {
-    backgroundColor: '#c23616',
+    backgroundColor: '#8c7ae6',
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
@@ -130,6 +143,53 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 20,
   },
+  containerCadastro: {
+    flex: 1,
+    padding: 50,
+    backgroundColor: '#C23616',
+    justifyContent: "center",
+    alignItems: 'center',
+  },
+
+  tituloCadastro: {
+    alignItems: 'center',
+    fontSize: 36,
+    color: '#f5f6fa',
+    marginBottom: 20,
+    fontWeight: '600',
+  },
+
+  textoCadastro: {
+    alignItems: 'center',
+    fontSize: 15,
+    color: '#F5F6FA',
+    marginBottom: 30,
+  },
+
+  caixaDeTexto: {
+    fontSize: 20,
+    marginVertical: 10,
+    borderRadius: 5,
+    backgroundColor: '#f5f6fa',
+    width: 250,
+    height: 50,
+    textAlign: 'center',
+  },
+
+  tituloCadastroRealizado: {
+    alignItems: 'center',
+    fontSize: 45,
+    color: '#f5f6fa',
+    marginBottom: 20,
+    //fontFamily: 'Lemon',
+  },
+
+  textoCadastroRealizado: {
+    alignItems: 'center',
+    fontSize: 25,
+    color: '#F5F6FA',
+    marginVertical: 100,
+  }
 });
 
 export default styles;

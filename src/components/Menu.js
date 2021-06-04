@@ -42,6 +42,10 @@ class Menu extends Component {
             { id: 5, sabor: 'Frango', isSelected: false },
             { id: 6, sabor: 'Muçarela', isSelected: false },
             { id: 7, sabor: 'Brigadeiro', isSelected: false },
+            { id: 8, sabor: 'Marguerita', isSelected: false },
+            { id: 9, sabor: 'Peito de Peru', isSelected: false },
+            { id: 10, sabor: 'Romeu e Julieta', isSelected: false },
+            { id: 11, sabor: 'Bacon', isSelected: false },
         ],
     }
 
@@ -98,7 +102,7 @@ class Menu extends Component {
 
     validarPedido = (nomeUsuario) => {
         if (this.state.sabores_escolhidos.length > 0) {
-            this.props.navigation.navigate('Finalizado',{'nome': nomeUsuario, 'valor': this.state.tamanho_escolhido.preco}) 
+            this.props.navigation.navigate('Finalizado', { 'nome': nomeUsuario, 'valor': this.state.tamanho_escolhido.preco })
         } else {
             console.log("Escolha algum sabor.");
             alert("Escolha algum sabor.");
@@ -124,7 +128,6 @@ class Menu extends Component {
 
         return (
             <View style={styles.container}>
-                {/*<Image source={require('../images/img2.png')} style={styles.imagem}/>*/}
                 <Text style={styles.titulo}>Olá {nomeUsuario}, bem vindo!</Text>
                 <Text style={styles.titulo}>Monte sua pizza!</Text>
 
@@ -150,6 +153,14 @@ class Menu extends Component {
                     {opcoesSabores[6]}
                     {opcoesSabores[7]}
                 </View>
+                <View style={styles.secaoSabores}>
+                    {opcoesSabores[8]}
+                    {opcoesSabores[9]}
+                </View>
+                <View style={styles.secaoSabores}>
+                    {opcoesSabores[10]}
+                    {opcoesSabores[11]}
+                </View>
 
 
                 <View style={{ marginVertical: 6, alignSelf: 'stretch', alignItems: 'center' }}>
@@ -157,7 +168,7 @@ class Menu extends Component {
                 </View>
 
                 <View style={{ flexDirection: 'row', marginVertical: 16, alignSelf: 'stretch' }}>
-                    <TouchableOpacity style={styles.buttonPedido} onPress={() => { this.props.navigation.navigate('Espera') }}>
+                    <TouchableOpacity style={styles.buttonPedido} onPress={() => { this.props.navigation.navigate('Login') }}>
                         <Text style={styles.textButton}>Cancelar</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.buttonPedido} onPress={() => { this.validarPedido(nomeUsuario) }}>

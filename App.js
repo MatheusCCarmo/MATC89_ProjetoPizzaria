@@ -5,31 +5,38 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from './src/components/Login';
 import Menu from './src/components/Menu';
-import Espera from './src/components/Espera';
 import Cadastro from './src/components/Cadastro';
 import Finalizado from './src/components/Finalizado';
+import CadastroRealizado from './src/components/CadastroRealizado';
 
 const MainNavigation = createStackNavigator({
+  Menu: {
+    screen: Menu,
+    navigationOptions: {
+      header: null
+    }
+  },
   Login: {
     screen: Login,
     navigationOptions: {
       header: null
     }
   },
-
-  Menu: {
-    screen: Menu,
-    navigationOptions: {
-      headerTitle: 'Menu',
-    }
-  },
-
-  Espera: {
-    screen: Espera,
+  
+  CadastroRealizado: {
+    screen: CadastroRealizado,
     navigationOptions: {
       header: null
     }
   },
+
+  Cadastro: {
+    screen: Cadastro,
+    navigationOptions: {
+      header: null
+    }
+  },
+
 
   Finalizado: {
     screen: Finalizado,
@@ -41,9 +48,9 @@ const MainNavigation = createStackNavigator({
   Cadastro: {
     screen: Cadastro,
     navigationOptions: {
-      headerTitle: 'Cadastro',
+      header: null,
     }
   }
-})
+});
 
 export default createAppContainer(MainNavigation);

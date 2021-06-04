@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 
 # Expo
@@ -134,3 +135,18 @@ docs/pages/versions/*/react-native/*.diff
 
 # Pods
 /ios/Pods
+=======
+node_modules/
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+>>>>>>> 1f0fb56f703ef9ccf6ab7c12650397979495a661

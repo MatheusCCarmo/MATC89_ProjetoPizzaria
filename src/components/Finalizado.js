@@ -11,7 +11,6 @@ class Finalizado extends Component {
         const valorTotal = navigation.getParam('valor');
 
         return (<View style={styles.container}>
-            {/*<Image source={require('../images/img2.png')} style={styles.imagem}/>*/}
 
             <Text style={styles.titulo}>Obrigado pela preferência {nomeUsuario}!</Text>
             <Text style={styles.titulo}>Seu pedido foi confirmado!</Text>
@@ -21,7 +20,7 @@ class Finalizado extends Component {
             </View>
 
             <View style={{ marginVertical: 16, alignSelf: 'stretch' }}>
-                <TouchableOpacity style={styles.buttonPedido} onPress={() => { this.props.navigation.navigate('Espera') }}>
+                <TouchableOpacity style={styles.buttonPedido} onPress={() => { this.props.navigation.navigate('Login') }}>
                     <Text style={styles.textButton}>Retornar ao Início</Text>
                 </TouchableOpacity>
 
