@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   caixa: {
     width: 200,
     backgroundColor: 'white',
-    fontSize: 25,
+    fontSize: 20,
     padding: 10,
     marginTop: 10,
     borderRadius: 15,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   titulo: {
     fontWeight: '600',
     color: '#2f3640',
-    fontSize: 28,
+    fontSize: 22,
     textAlign: 'center',
   },
   secao: {
@@ -78,22 +78,57 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   secaoTamanho: {
-    height: 48,
+    flex: 0.8,
     flexDirection: 'row',
     alignSelf: 'stretch',
-    alignContent: 'space-between',
   },
-  opcaoTamanho: {
+  secaoSabores: {
     flex: 1,
-    backgroundColor: 'blue',
-    alignSelf: 'center',
-    alignItems: 'center',
+    width: 'stretch',
+    flexDirection: 'row',
+    alignSelf: 'stretch',
   },
-  opcaoTamanhoSelecionado: {
+  opcao: {
     flex: 1,
-    backgroundColor: 'black',
-    alignSelf: 'center',
+    marginHorizontal: 4,
+    marginVertical: 3,
+    backgroundColor: '#dcdde1',
     alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 6,
+  },
+  opcaoSelecionado: {
+    flex: 1,
+    marginHorizontal: 4,
+    marginVertical: 3,
+    backgroundColor: '#7f8fa6',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 6,
+  },
+  textOpcao: {
+    fontSize: 16,
+    color: '#2f3640',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: '500',
+  },
+  textOpcaoSelecionado: {
+    fontSize: 14,
+    color: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: '500',
+  },
+  buttonPedido: {
+    backgroundColor: '#c23616',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+    marginHorizontal: 3,
+    height: 50,
+    padding: 16,
+    borderRadius: 20,
   },
 });
 

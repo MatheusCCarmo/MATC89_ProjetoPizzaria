@@ -7,15 +7,9 @@ import Login from './src/components/Login';
 import Menu from './src/components/Menu';
 import Espera from './src/components/Espera';
 import Cadastro from './src/components/Cadastro';
+import Finalizado from './src/components/Finalizado';
 
 const MainNavigation = createStackNavigator({
-  Menu: {
-    screen: Menu,
-    navigationOptions: {
-      headerTitle: 'Menu',
-    }
-  },
-
   Login: {
     screen: Login,
     navigationOptions: {
@@ -23,8 +17,22 @@ const MainNavigation = createStackNavigator({
     }
   },
 
+  Menu: {
+    screen: Menu,
+    navigationOptions: {
+      headerTitle: 'Menu',
+    }
+  },
+
   Espera: {
     screen: Espera,
+    navigationOptions: {
+      header: null
+    }
+  },
+
+  Finalizado: {
+    screen: Finalizado,
     navigationOptions: {
       header: null
     }
