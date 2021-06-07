@@ -10,18 +10,19 @@ import Finalizado from './src/components/Finalizado';
 import CadastroRealizado from './src/components/CadastroRealizado';
 
 const MainNavigation = createStackNavigator({
-  Menu: {
-    screen: Menu,
-    navigationOptions: {
-      header: null
-    }
-  },
   Login: {
     screen: Login,
     navigationOptions: {
       header: null
     }
   },
+  Menu: {
+    screen: Menu,
+    navigationOptions: {
+      header: null
+    }
+  },
+  
   
   CadastroRealizado: {
     screen: CadastroRealizado,
