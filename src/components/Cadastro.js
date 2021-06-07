@@ -8,7 +8,8 @@ class Cadastro extends Component{
     state = {
         usuario: '',
         email: '',
-        senha: ''
+        senha: '',
+        endereco: '',
     }
 
     render(){
@@ -24,6 +25,7 @@ class Cadastro extends Component{
                 <TextInput style={styles.caixaDeTexto} placeholder={'Informe um e-mail'} onChangeText= {text => this.state.email = text}/>
                 <TextInput style={styles.caixaDeTexto} placeholder={'Informe uma senha'} secureTextEntry={true} onChangeText= {text => this.state.senha = text}/>
                 <TextInput style={styles.caixaDeTexto} placeholder={'Confirme a senha'} secureTextEntry={true} onChangeText= {text => this.state.senha = text}/>
+                <TextInput style={styles.caixaDeTexto} placeholder={'Informe o endereço'} onChangeText= {text => this.state.endereco = text}/>
                 
                 <TouchableOpacity style={styles.button} onPress={() => {this.props.navigation.navigate('CadastroRealizado', {'usuario': this.state.usuario}, {'email': this.state.email}, {'senha': this.state.senha})}}>
                     <Text style={styles.textButton}>Finalizar Cadastro</Text>

@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: '#F5F6FA',
     marginVertical: 100,
-  }
+  },
 });
 
 export default styles;
